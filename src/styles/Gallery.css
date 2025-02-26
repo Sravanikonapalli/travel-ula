@@ -1,0 +1,77 @@
+.gallery-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .gallery-container h2 {
+    font-size: 24px;
+    color: #ff6f00;
+    margin-bottom: 20px;
+  }
+  
+  .slick-slider {
+    position: relative;
+    width: 100%;
+  }
+  
+  .slide {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .slick-dots {
+    bottom: -30px;
+  }
+  
+  .slick-dots li button:before {
+    color: #ff6f00;
+    font-size: 12px;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #e65c00;
+  }
+  
+  .slick-prev, .slick-next {
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    font-size: 24px;
+    color: #ff6f00;
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-container {
+      width: 95%;
+    }
+  
+    .slide img {
+      max-height: 300px;
+    }
+  
+    .slick-prev, .slick-next {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .slick-prev:before, .slick-next:before {
+      font-size: 20px;
+    }
+  }
+  
